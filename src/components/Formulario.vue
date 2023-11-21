@@ -9,7 +9,7 @@
         <input :value="props.tarefaTemp" required @change="props.editaTarefaTemp" type="text" placeholder="Digite aqui a descrição da tarefa" class="form-control">
         </div>
         <div class="col-md-2">
-        <button type="submit" class="btn btn-primary">Cadastrar tarefa</button>
+        <button id="botao" type="submit" class="btn btn-primary">Cadastrar tarefa</button>
         
         </div>
         <div class="col-md-2">
@@ -22,3 +22,11 @@
     </div>
     </form>
 </template>
+
+<style scoped>
+@media screen and (max-width: 768px){
+    button{
+        margin: 20px 0;
+    }
+}
+</style>
